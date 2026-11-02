@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="logoTitle logoDescription">
+  <title id="logoTitle">Isotipo de ElPuntoTech</title>
+  <desc id="logoDescription">Punto central conectado a cuatro nodos tecnológicos</desc>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+  <path d="M64 32v16M64 80v16M32 64h16M80 64h16" stroke="#0284C7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M41.4 41.4 52.7 52.7M75.3 75.3l11.3 11.3M86.6 41.4 75.3 52.7M52.7 75.3 41.4 86.6" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="20" fill="#0284C7"/>
+  <circle cx="64" cy="64" r="8" fill="#F8FAFC"/>
+  <circle cx="64" cy="24" r="8" fill="#0F172A"/>
+  <circle cx="104" cy="64" r="8" fill="#0F172A"/>
+  <circle cx="64" cy="104" r="8" fill="#0F172A"/>
+  <circle cx="24" cy="64" r="8" fill="#0F172A"/>
+</svg>
