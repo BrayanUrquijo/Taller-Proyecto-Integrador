@@ -1,4 +1,4 @@
-# ElPuntoTech
+# ElPuntoTech - NOSOTROS
 
 ## Guía para el equipo
 
