@@ -26,3 +26,10 @@
   }
   iniciarCambioDeTema();
 })();
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elementosCollapsible = document.querySelectorAll('.collapsible');
+  if (elementosCollapsible.length > 0 && typeof M !== 'undefined') {
+    M.Collapsible.init(elementosCollapsible);
+  }
+});
