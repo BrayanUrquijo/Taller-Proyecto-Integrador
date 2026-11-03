@@ -170,6 +170,101 @@ main > :last-child {
   box-shadow: 0 2px 5px rgb(31 41 51 / 12%);
 }
 
+.seccion-objetivos {
+  padding: 3rem 0;
+}
+
+.tarjeta-objetivos {
+  margin-top: 2rem;
+}
+
+.titulo-objetivos {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+}
+
+.lista-desplegable {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  list-style: none;
+}
+
+.lista-desplegable li {
+  margin-bottom: 0.75rem;
+  border: 0;
+}
+
+.lista-desplegable .collapsible-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lista-desplegable .collapsible-body {
+  display: none;
+}
+
+.lista-desplegable li.active .collapsible-body {
+  display: block;
+}
+
+.lista-desplegable .collapsible-header {
+  min-height: 4rem;
+  padding: 1rem 1.25rem;
+  color: #1f2933;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.lista-desplegable .collapsible-header:hover,
+.lista-desplegable .collapsible-header:focus {
+  background: #e2e8f0;
+  border-color: #1769aa;
+}
+
+.lista-desplegable .collapsible-header i.material-icons {
+  flex: 0 0 auto;
+  margin-right: 0.75rem;
+  color: #1769aa;
+}
+
+.lista-desplegable .collapsible-body {
+  padding: 1.25rem 1.5rem;
+  color: #59636e;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
+  line-height: 1.625;
+}
+
+html.dark .lista-desplegable .collapsible-header {
+  color: #38bdf8;
+  background: #1e293b;
+  border-color: #475569;
+}
+
+html.dark .lista-desplegable .collapsible-header:hover,
+html.dark .lista-desplegable .collapsible-header:focus {
+  background: #334155;
+  border-color: #38bdf8;
+}
+
+html.dark .lista-desplegable .collapsible-body {
+  color: #94a3b8;
+  background: #0f172a;
+  border-color: #334155;
+}
+
 .contenido-tarjeta {
   padding: 0;
 }
@@ -481,42 +576,4 @@ html.dark .lista-integrantes li::before {
   .contenedor-pagina {
     width: calc(100% - 2rem);
   }
-
-html.dark .collapsible,
-html.dark .collapsible.lista-desplegable {
-  border: none !important;
-  box-shadow: none !important;
-  background-color: transparent !important;
-}
-
-html.dark .collapsible-header,
-html.dark .lista-desplegable .collapsible-header,
-html.dark .collapsible li .collapsible-header {
-  background-color: #1e293b !important;
-  border: 1px solid #475569 !important;
-  border-radius: 6px !important;
-  margin-bottom: 0.5rem !important;
-  color: #38bdf8 !important; 
-}
-
-html.dark .collapsible-header strong,
-html.dark .lista-desplegable .collapsible-header strong {
-  color: #38bdf8 !important;
-}
-
-html.dark .collapsible-header i.material-icons,
-html.dark .lista-desplegable .collapsible-header i.material-icons {
-  color: #f1f5f9 !important;
-  margin-right: 0.75rem !important;
-}
-
-html.dark .collapsible-body,
-html.dark .lista-desplegable .collapsible-body {
-  background-color: #0f172a !important;
-  border: 1px solid #334155 !important;
-  border-radius: 0 0 6px 6px !important;
-  margin-top: -0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  color: #94a3b8 !important;
-}
 }
