@@ -481,4 +481,42 @@ html.dark .lista-integrantes li::before {
   .contenedor-pagina {
     width: calc(100% - 2rem);
   }
+
+html.dark .collapsible,
+html.dark .collapsible.lista-desplegable {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+html.dark .collapsible-header,
+html.dark .lista-desplegable .collapsible-header,
+html.dark .collapsible li .collapsible-header {
+  background-color: #1e293b !important;
+  border: 1px solid #475569 !important;
+  border-radius: 6px !important;
+  margin-bottom: 0.5rem !important;
+  color: #38bdf8 !important; 
+}
+
+html.dark .collapsible-header strong,
+html.dark .lista-desplegable .collapsible-header strong {
+  color: #38bdf8 !important;
+}
+
+html.dark .collapsible-header i.material-icons,
+html.dark .lista-desplegable .collapsible-header i.material-icons {
+  color: #f1f5f9 !important;
+  margin-right: 0.75rem !important;
+}
+
+html.dark .collapsible-body,
+html.dark .lista-desplegable .collapsible-body {
+  background-color: #0f172a !important;
+  border: 1px solid #334155 !important;
+  border-radius: 0 0 6px 6px !important;
+  margin-top: -0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #94a3b8 !important;
+}
 }
