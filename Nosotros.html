@@ -5,9 +5,102 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Nosotros | ElPuntoTech</title>
 		<link rel="icon" type="image/svg+xml" href="img/logo-elpuntotech.svg">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<script src="js/theme.js"></script>
 	</head>
-	<body>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<body class="cuerpo-aplicacion">
+		<header class="encabezado-principal">
+			<nav class="barra-navegacion">
+				<div class="contenedor-pagina contenedor-navegacion">
+					<a class="marca-navegacion" href="Index.html">
+						<img class="logo-marca" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
+						<span class="nombre-marca">ElPuntoTech</span>
+					</a>
+					<ul class="enlaces-navegacion">
+						<li><a href="Index.html">Inicio</a></li>
+						<li class="active">
+							<a aria-current="page" href="Nosotros.html">Nosotros</a>
+						</li>
+						<li><a href="Objetivos.html">Objetivos</a></li>
+						<li><a href="Avances.html">Avances</a></li>
+						<li><a href="Contacto.html">Contacto</a></li>
+					</ul>
+					<button aria-label="Cambiar tema" class="boton-tema" id="boton-tema" title="Cambiar tema" type="button">
+						<i class="material-icons" id="icono-tema">light_mode</i>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<main class="contenido-principal">
+			<section class="seccion-nosotros">
+				<div class="contenedor-pagina">
+					<div class="tarjeta-inicio tarjeta-presentacion">
+						<div class="contenido-inicio">
+							<span class="etiqueta-inicio">SOBRE EL PROYECTO</span>
+							<h1 class="titulo-inicio">¿Quiénes somos?</h1>
+							<p class="descripcion-inicio">
+								ElPuntoTech es una propuesta de sistema POS creada para ayudar a las
+								empresas de productos electrónicos a organizar sus operaciones,
+								optimizar sus recursos y tomar mejores decisiones.
+							</p>
+						</div>
+					</div>
+
+					<div class="tarjetas-identidad">
+						<article class="tarjeta-inicio tarjeta-identidad">
+							<div class="contenido-identidad">
+								<span class="icono-identidad material-icons" aria-hidden="true">flag</span>
+								<span class="etiqueta-inicio">NUESTRA MISIÓN</span>
+								<h2 class="titulo-identidad">Misión</h2>
+								<p class="descripcion-inicio">
+									Desarrollar una plataforma POS clara, confiable y accesible que
+									simplifique la gestión de inventarios, ventas, clientes y usuarios
+									para las empresas de productos electrónicos.
+								</p>
+							</div>
+						</article>
+
+						<article class="tarjeta-inicio tarjeta-identidad">
+							<div class="contenido-identidad">
+								<span class="icono-identidad material-icons" aria-hidden="true">visibility</span>
+								<span class="etiqueta-inicio">NUESTRA VISIÓN</span>
+								<h2 class="titulo-identidad">Visión</h2>
+								<p class="descripcion-inicio">
+									Consolidarnos como una solución tecnológica que impulse la
+									transformación digital de los comercios de electrónica, ofreciendo
+									información oportuna para mejorar su crecimiento y competitividad.
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="pie-pagina">
+			<div class="contenedor-pagina">
+				<div class="distribucion-pie">
+					<div class="marca-pie">
+						<img class="logo-pie" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
+						<div><span class="titulo-pie">ElPuntoTech</span></div>
+					</div>
+					<div class="datos-grupo">
+						<span class="encabezado-pie">Datos del grupo</span>
+						<p class="texto-pie">Asignatura: Proyecto Integrador</p>
+						<span class="etiqueta-integrantes">Equipo responsable</span>
+						<ul class="lista-integrantes">
+							<li>Brayan Urquijo</li>
+							<li>Nicolle Puin</li>
+							<li>Santiago Torres</li>
+							<li>Karen Vanessa</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/app.js"></script>
 	</body>
 </html>
