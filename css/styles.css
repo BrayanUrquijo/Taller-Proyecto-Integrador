@@ -1027,3 +1027,447 @@ html.dark .visor-avance {
     height: 420px;
   }
 }
+
+nav.barra-navegacion {
+  height: 64px;
+  line-height: normal;
+  background: #f5f6f7;
+  border-bottom: 1px solid #aeb5bd;
+  box-shadow: none;
+}
+
+nav.barra-navegacion .enlaces-navegacion a {
+  line-height: 64px;
+}
+
+html.dark nav.barra-navegacion {
+  background: #182234 !important;
+  border-color: #334155 !important;
+}
+
+/* Sección Contacto (contacto.html)*/
+.seccion-contacto {
+  padding: 3rem 0;
+}
+
+.seccion-contacto .descripcion-inicio {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  max-width: 800px;
+}
+
+.tarjeta-contacto-hero {
+  margin-bottom: 2rem;
+}
+
+.contenido-contacto-encabezado {
+  min-height: auto;
+  padding: 2.5rem;
+}
+
+.distribucion-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.tarjeta-formulario,
+.tarjeta-info-contacto {
+  height: 100%;
+}
+
+.contenido-tarjeta-contacto {
+  padding: 2.5rem;
+  background: #f8f9fa;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-bloque-contacto {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.descripcion-formulario {
+  color: #59636e;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+}
+
+/* Formulario y Controles */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.etiqueta-campo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #1f2933;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.etiqueta-campo .icono-campo {
+  font-size: 1.15rem;
+  color: #1769aa;
+}
+
+.entrada-texto,
+.area-texto {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px !important;
+  padding: 0.75rem 1rem !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+  color: #1f2933 !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+.area-texto {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.entrada-texto:focus,
+.area-texto:focus {
+  border-color: #1769aa !important;
+  box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.15) !important;
+}
+
+.entrada-texto.campo-error,
+.area-texto.campo-error {
+  border-color: #ba1a1a !important;
+  box-shadow: 0 0 0 2px rgba(186, 26, 26, 0.15) !important;
+}
+
+.mensaje-error {
+  color: #ba1a1a;
+  font-size: 0.8rem;
+  font-weight: 500;
+  min-height: 1.1rem;
+  display: block;
+  margin-top: 0.15rem;
+}
+
+/* Botones con estilo Materialize */
+.acciones-formulario {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn.boton-enviar {
+  background-color: #1769aa;
+  color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(31, 41, 51, 0.12);
+  font-weight: 600;
+  font-size: 0.925rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.btn.boton-enviar:hover,
+.btn.boton-enviar:focus {
+  background-color: #155e91;
+  box-shadow: 0 4px 8px rgba(23, 105, 170, 0.25);
+}
+
+.btn.boton-enviar i.material-icons {
+  font-size: 1.15rem;
+  margin-left: 0.5rem;
+  line-height: inherit;
+}
+
+.btn-flat.boton-limpiar {
+  color: #59636e;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: none;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 1rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.btn-flat.boton-limpiar:hover {
+  background-color: #e4e7ea;
+  color: #1f2933;
+}
+
+/* Mensaje de confirmación visual */
+.mensaje-exito {
+  margin-bottom: 1.25rem;
+  padding: 0.875rem 1.25rem;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 6px;
+  color: #065f46;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.mensaje-exito.oculto {
+  display: none;
+}
+
+/* Información institucional / Canales */
+.lista-canales-contacto {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.item-canal {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icono-canal-marco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #eef0f2;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #1769aa;
+  flex: 0 0 auto;
+}
+
+.icono-canal-marco i.material-icons {
+  font-size: 1.3rem;
+}
+
+.detalle-canal {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-canal {
+  color: #1f2933;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.texto-canal {
+  color: #59636e;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.subtexto-canal {
+  color: #8590a0;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+/* Caja de estado del soporte */
+.caja-estado-soporte {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.indicador-pulso {
+  width: 10px;
+  height: 10px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulsoVerde 2s infinite;
+  flex: 0 0 auto;
+}
+
+@keyframes pulsoVerde {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.texto-estado {
+  color: #1f2933;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+/* Toast de Materialize personalizado */
+.toast-exito {
+  background-color: #0b1120 !important;
+  color: #f1f5f9 !important;
+  border: 1px solid #334155 !important;
+  font-size: 0.9rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.toast-exito i.material-icons {
+  color: #38bdf8;
+  margin-right: 0.75rem;
+}
+
+/*Modo Oscuro para Contacto*/
+html.dark .contenido-tarjeta-contacto {
+  background: #1e293b;
+}
+
+html.dark .titulo-bloque-contacto,
+html.dark .etiqueta-campo,
+html.dark .titulo-canal,
+html.dark .texto-estado {
+  color: #f1f5f9;
+}
+
+html.dark .etiqueta-campo .icono-campo,
+html.dark .icono-canal-marco {
+  color: #38bdf8;
+}
+
+html.dark .descripcion-formulario,
+html.dark .texto-canal {
+  color: #94a3b8;
+}
+
+html.dark .subtexto-canal {
+  color: #64748b;
+}
+
+html.dark .entrada-texto,
+html.dark .area-texto {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+  color: #f1f5f9 !important;
+}
+
+html.dark .entrada-texto:focus,
+html.dark .area-texto:focus {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2) !important;
+}
+
+html.dark .entrada-texto.campo-error,
+html.dark .area-texto.campo-error {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25) !important;
+}
+
+html.dark .mensaje-error {
+  color: #f87171;
+}
+
+html.dark .btn.boton-enviar {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+html.dark .btn.boton-enviar:hover,
+html.dark .btn.boton-enviar:focus {
+  background-color: #38bdf8;
+  color: #0b1120;
+}
+
+html.dark .btn-flat.boton-limpiar {
+  color: #94a3b8;
+}
+
+html.dark .btn-flat.boton-limpiar:hover {
+  background-color: #334155;
+  color: #f1f5f9;
+}
+
+html.dark .icono-canal-marco {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html.dark .caja-estado-soporte {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html.dark .mensaje-exito {
+  background-color: #064e3b;
+  border-color: #059669;
+  color: #a7f3d0;
+}
+
+/* Responsividad para Contacto */
+@media only screen and (max-width: 992px) {
+  .distribucion-contacto {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .seccion-contacto {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .contenido-tarjeta-contacto,
+  .contenido-contacto-encabezado {
+    padding: 1.5rem;
+  }
+
+  .acciones-formulario {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn.boton-enviar,
+  .btn-flat.boton-limpiar {
+    width: 100%;
+    justify-content: center;
+  }
+}
