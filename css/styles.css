@@ -188,10 +188,6 @@ main > :last-child {
   gap: 2rem;
 }
 
-.tarjeta-identidad {
-  min-height: 100%;
-}
-
 .contenido-identidad {
   display: flex;
   flex-direction: column;
@@ -223,6 +219,10 @@ main > :last-child {
 
 .tarjeta-objetivos {
   margin-top: 2rem;
+}
+
+.tarjeta-objetivos .contenido-objetivos {
+  padding: 2.5rem;
 }
 
 .titulo-objetivos {
@@ -631,5 +631,399 @@ html.dark .lista-integrantes li::before {
 
   .contenedor-pagina {
     width: calc(100% - 2rem);
+  }
+}
+
+/* DISEÑO DE AVANCES.HTML */
+
+.seccion-avances {
+  padding: 3rem 0;
+}
+
+.resumen-avances {
+  min-height: 0;
+}
+
+.cuadricula-resumen {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.dato-resumen {
+  padding: 1.25rem 1rem;
+  background: #eef0f2;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.numero-resumen {
+  display: block;
+  color: #1769aa;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 2.5rem;
+}
+
+.texto-resumen {
+  display: block;
+  color: #59636e;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.encabezado-bloque {
+  margin: 2rem 0 1rem;
+}
+
+/* Etiquetas y estados */
+
+.etiqueta-avance {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.625rem;
+  color: #59636e;
+  background: #eef0f2;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.25rem;
+  white-space: nowrap;
+}
+
+.etiqueta-avance i.material-icons {
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.etiqueta-avance.estado-completado {
+  color: #ffffff;
+  background: #1769aa;
+  border-color: #1769aa;
+}
+
+/* Botones */
+
+.boton-avance {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 40px;
+  padding: 0 1.25rem;
+  color: #ffffff;
+  background: #1769aa;
+  border: 1px solid #1769aa;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.boton-avance:hover,
+.boton-avance:focus {
+  color: #ffffff;
+  background: #155e91;
+  border-color: #155e91;
+  box-shadow: none;
+}
+
+.boton-avance i.material-icons {
+  height: auto;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.boton-avance-secundario {
+  color: #1f2933;
+  background: transparent;
+  border-color: #9da5ae;
+}
+
+.boton-avance-secundario:hover,
+.boton-avance-secundario:focus {
+  color: #1769aa;
+  background: #e4e7ea;
+  border-color: #1769aa;
+}
+
+/* Contenedores de avances (Grid de Materialize) */
+
+.row.fila-avances {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin: 0;
+}
+
+.row.fila-avances > .col {
+  display: flex;
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.tarjeta-avance {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background: #f8f9fa;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgb(31 41 51 / 12%);
+  transition: border-color 0.2s ease;
+}
+
+.tarjeta-avance:hover {
+  border-color: #1769aa;
+}
+
+.cabecera-avance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #eef0f2;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.icono-avance {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #1769aa;
+  background: #f8f9fa;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.meta-avance {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.cuerpo-avance {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 18.5rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.titulo-avance {
+  margin: 0 0 0.5rem;
+  color: #1f2933;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.75rem;
+}
+
+.texto-avance {
+  margin: 0 0 0.75rem;
+  color: #59636e;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.lista-detalle {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  color: #59636e;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.lista-detalle li {
+  margin-bottom: 0.5rem;
+}
+
+.lista-detalle li:last-child {
+  margin-bottom: 0;
+}
+
+.lista-detalle li::before {
+  margin-right: 0.5rem;
+  color: #1769aa;
+  content: "•";
+}
+
+.lista-detalle strong {
+  color: #1f2933;
+  font-weight: 600;
+}
+
+.acciones-avance {
+  display: flex;
+  margin-top: auto;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Visor de PDF */
+
+.visor-avance {
+  border-top: 1px solid #cbd5e1;
+}
+
+.visor-documento {
+  display: block;
+  width: 100%;
+  height: 520px;
+  background: #ffffff;
+  border: 0;
+}
+
+.toast {
+  color: #f8fafc;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+/* Modo oscuro */
+
+html.dark .dato-resumen {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html.dark .numero-resumen {
+  color: #38bdf8;
+}
+
+html.dark .texto-resumen,
+html.dark .texto-avance,
+html.dark .lista-detalle {
+  color: #94a3b8;
+}
+
+html.dark .titulo-avance,
+html.dark .lista-detalle strong {
+  color: #f1f5f9;
+}
+
+html.dark .etiqueta-avance {
+  color: #94a3b8;
+  background: #0f172a;
+  border-color: #475569;
+}
+
+html.dark .etiqueta-avance.estado-completado {
+  color: #0b1120;
+  background: #38bdf8;
+  border-color: #38bdf8;
+}
+
+html.dark .boton-avance {
+  color: #0b1120;
+  background: #38bdf8;
+  border-color: #38bdf8;
+}
+
+html.dark .boton-avance:hover,
+html.dark .boton-avance:focus {
+  color: #0b1120;
+  background: #38bdf8;
+  border-color: #38bdf8;
+  filter: brightness(1.12);
+}
+
+html.dark .boton-avance-secundario {
+  color: #f1f5f9;
+  background: transparent;
+  border-color: #475569;
+}
+
+html.dark .boton-avance-secundario:hover,
+html.dark .boton-avance-secundario:focus {
+  color: #38bdf8;
+  background: #334155;
+  border-color: #38bdf8;
+  filter: none;
+}
+
+html.dark .tarjeta-avance {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+html.dark .tarjeta-avance:hover {
+  border-color: #38bdf8;
+}
+
+html.dark .cabecera-avance {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+html.dark .icono-avance {
+  color: #38bdf8;
+  background: #1e293b;
+  border-color: #475569;
+}
+
+html.dark .lista-detalle li::before {
+  color: #38bdf8;
+}
+
+html.dark .visor-avance {
+  border-color: #334155;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 992px) {
+  .cuerpo-avance {
+    min-height: 21rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row.fila-avances {
+    grid-template-columns: 1fr;
+  }
+
+  .seccion-avances {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .encabezado-bloque {
+    margin-top: 2rem;
+  }
+
+  .cabecera-avance {
+    padding: 1rem;
+  }
+
+  .cuerpo-avance {
+    min-height: 0;
+    padding: 1.25rem;
+  }
+
+  .visor-documento {
+    height: 420px;
   }
 }
