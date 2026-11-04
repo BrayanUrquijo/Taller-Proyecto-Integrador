@@ -5,9 +5,155 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contacto | ElPuntoTech</title>
 		<link rel="icon" type="image/svg+xml" href="img/logo-elpuntotech.svg">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<script src="js/theme.js"></script>
 	</head>
-	<body>
+	<body class="cuerpo-aplicacion">
+		<header class="encabezado-principal">
+			<nav class="barra-navegacion">
+				<div class="contenedor-pagina contenedor-navegacion">
+					<a class="marca-navegacion" href="Index.html">
+						<img class="logo-marca" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
+						<span class="nombre-marca">ElPuntoTech</span>
+					</a>
+					<ul class="enlaces-navegacion">
+						<li>
+							<a aria-current="page" href="Index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="Nosotros.html">Nosotros</a>
+						</li>
+						<li>
+							<a href="Objetivos.html">Objetivos</a>
+						</li>
+						<li>
+							<a href="Avances.html">Avances</a>
+						</li>
+						<li class="active">
+							<a aria-current="page" href="Contacto.html">Contacto</a>
+						</li>
+					</ul>
+					<button aria-label="Cambiar tema" class="boton-tema" id="boton-tema" title="Cambiar tema" type="button">
+						<i class="material-icons" id="icono-tema">light_mode</i>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<main class="contenido-principal">
+			<section class="seccion-contacto">
+				<div class="contenedor-pagina">
+
+					<!-- Tarjeta Encabezado / Presentación -->
+					<div class="tarjeta-inicio tarjeta-contacto-hero">
+						<div class="contenido-tarjeta">
+							<div class="contenido-inicio contenido-contacto-encabezado">
+								<span class="etiqueta-inicio">CANALES DE COMUNICACIÓN</span>
+								<h1 class="titulo-inicio">Contacto</h1>
+								<p class="resumen-inicio">
+									Comunícate con el equipo de desarrollo de ElPuntoTech
+								</p>
+								<p class="descripcion-inicio">
+									¿Tienes preguntas sobre el sistema POS o deseas dejar alguna sugerencia para alguna futura version? llena el formulario y manda tu mensaje a nuestro equipo de desarrollo.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Formulario de Contacto -->
+					<div class="distribucion-contacto">
+						<div class="tarjeta-inicio tarjeta-formulario">
+							<div class="contenido-tarjeta-contacto">
+								<span class="etiqueta-inicio">FORMULARIO DIRECTO</span>
+								<h2 class="titulo-inicio titulo-bloque-contacto">Envíanos un mensaje</h2>
+								<p class="descripcion-formulario">
+									Ingresa tus datos a continuación. Todos los campos marcados con (*) son obligatorios.
+								</p>
+
+								<!-- Mensaje de confirmación visual -->
+								<div id="mensaje-exito" class="mensaje-exito oculto" role="alert"></div>
+
+								<form id="formulario-contacto" class="formulario-contacto" novalidate>
+									<!-- Campo: Nombre -->
+									<div class="grupo-campo">
+										<label for="nombre" class="etiqueta-campo">
+											<i class="material-icons icono-campo">person</i>
+											<span>Nombre completo *</span>
+										</label>
+										<input type="text" id="nombre" name="nombre" class="entrada-texto" placeholder="Ej. Juan Pérez" autocomplete="name">
+										<span class="mensaje-error" id="error-nombre"></span>
+									</div>
+
+									<!-- Campo: Correo -->
+									<div class="grupo-campo">
+										<label for="correo" class="etiqueta-campo">
+											<i class="material-icons icono-campo">email</i>
+											<span>Correo electrónico *</span>
+										</label>
+										<input type="email" id="correo" name="correo" class="entrada-texto" placeholder="nombrecorreo@correounivalle.edu.co" autocomplete="email">
+										<span class="mensaje-error" id="error-correo"></span>
+									</div>
+
+									<!-- Campo: Mensaje -->
+									<div class="grupo-campo">
+										<label for="mensaje" class="etiqueta-campo">
+											<i class="material-icons icono-campo">chat</i>
+											<span>Mensaje *</span>
+										</label>
+										<textarea id="mensaje" name="mensaje" class="area-texto materialize-textarea" rows="4" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+										<span class="mensaje-error" id="error-mensaje"></span>
+									</div>
+
+									<!-- Botones estilizados -->
+									<div class="acciones-formulario">
+										<button type="submit" class="btn waves-effect waves-light boton-enviar" id="boton-enviar">
+											<span>Enviar mensaje</span>
+											<i class="material-icons right">send</i>
+										</button>
+										<button type="button" class="btn-flat boton-limpiar" id="boton-limpiar">
+											<i class="material-icons left">delete_sweep</i>
+											<span>Limpiar</span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+
+		<footer class="pie-pagina">
+			<div class="contenedor-pagina">
+				<div class="distribucion-pie">
+					<div class="marca-pie">
+						<img class="logo-pie" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
+						<div>
+							<span class="titulo-pie">ElPuntoTech</span>
+						</div>
+					</div>
+					<div class="datos-grupo">
+						<span class="encabezado-pie">Datos del grupo</span>
+						<p class="texto-pie">
+							Asignatura: Proyecto Integrador
+						</p>
+						<span class="etiqueta-integrantes">Equipo responsable</span>
+						<ul class="lista-integrantes">
+							<li>Brayan Urquijo</li>
+							<li>Nicolle Puin</li>
+							<li>Santiago Torres</li>
+							<li>Karen Vanessa</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- CDN de Materialize JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<!-- Script principal de la aplicación -->
+		<script src="js/app.js"></script>
 	</body>
 </html>
