@@ -1442,6 +1442,93 @@ html.dark .mensaje-exito {
   color: #a7f3d0;
 }
 
+.muestra-fuente {
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	line-height: 1.1;
+	margin: 0.75rem 0;
+	color: #1769aa;
+}
+
+body.dark-theme .muestra-fuente,
+	[data-theme="dark"] .muestra-fuente {
+			color: #38bdf8;
+}
+
+.cuadricula-colores {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	gap: 1rem;
+	margin-top: 1.25rem;
+}
+
+.ficha-color {
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	overflow: hidden;
+	background: inherit;
+}
+
+.muestra-hex {
+	height: 54px;
+	width: 100%;
+	border-bottom: 1px solid #cbd5e1;
+}
+
+.info-color {
+	padding: 0.75rem;
+}
+
+.codigo-hex {
+	font-family: monospace;
+	font-weight: 700;
+	font-size: 0.95rem;
+	display: block;
+	margin-bottom: 0.25rem;
+}
+
+.contenedor-logo-identidad {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+}
+
+.contenedor-logo-identidad img {
+	width: 64px;
+	height: 64px;
+}
+
+.texto-slogan {
+	font-size: 1.2rem;
+	font-weight: 600;
+	font-style: italic;
+	margin-top: 0.5rem;
+}
+
+.contenido-identidad-encabezado {
+  min-height: auto;
+  padding: 2rem 2.5rem;
+  align-items: flex-start;
+}
+
+.contenido-identidad-encabezado .titulo-inicio,
+.contenido-identidad-encabezado .descripcion-inicio {
+  max-width: 100%;
+}
+
+.contenido-identidad-encabezado .etiqueta-inicio {
+  margin-bottom: 0.5rem;
+}
+
+.contenido-identidad-encabezado .titulo-inicio {
+  margin-bottom: 0.5rem;
+}
+
 /* Responsividad para Contacto */
 @media only screen and (max-width: 992px) {
   .distribucion-contacto {
