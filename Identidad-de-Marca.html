@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Identidad y Tipografía | ElPuntoTech</title>
+		<title>Identidad de Marca y Tipografía | ElPuntoTech</title>
 		<link rel="icon" type="image/svg+xml" href="img/logo-elpuntotech.svg">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<script src="js/theme.js"></script>
@@ -16,16 +19,51 @@
 					<a class="marca-navegacion" href="Index.html">
 						<img class="logo-marca" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
 						<span class="nombre-marca">ElPuntoTech</span>
+						<span class="etiqueta-version-nav">CONCEPTO POS</span>
 					</a>
 					<ul class="enlaces-navegacion">
 						<li><a href="Index.html">Inicio</a></li>
-						<li><a href="Nosotros.html">Nosotros</a></li>
-						<li><a href="Objetivos.html">Objetivos</a></li>
-						<li><a href="Avances.html">Avances</a></li>
-						<li><a href="Contacto.html">Contacto</a></li>
-						<li class="active">
-							<a aria-current="page" href="Identidad-de-Marca.html">Identidad de Marca</a>
+						<li><a href="Index.html#catalogo-preview">Catálogo</a></li>
+						<li><a href="Index.html#sistema-pos">Sistema POS</a></li>
+						<li class="item-desplegable active">
+							<button class="boton-desplegable-nav" type="button" aria-expanded="false" aria-haspopup="true">
+								<span>Información</span>
+								<i class="material-icons icono-flecha-nav" aria-hidden="true">expand_more</i>
+							</button>
+							<ul class="menu-desplegable-nav" role="menu">
+								<li>
+									<a href="Nosotros.html">
+										<i class="material-icons" aria-hidden="true">groups</i>
+										<span>Nosotros (Misión y Visión)</span>
+									</a>
+								</li>
+								<li>
+									<a href="Objetivos.html">
+										<i class="material-icons" aria-hidden="true">track_changes</i>
+										<span>Objetivos del Proyecto</span>
+									</a>
+								</li>
+								<li>
+									<a href="Avances.html">
+										<i class="material-icons" aria-hidden="true">folder_open</i>
+										<span>Avances y Documentación</span>
+									</a>
+								</li>
+								<li class="sub-active">
+									<a aria-current="page" href="Identidad-de-Marca.html">
+										<i class="material-icons" aria-hidden="true">palette</i>
+										<span>Identidad de Marca</span>
+									</a>
+								</li>
+								<li>
+									<a href="Accesibilidad.html">
+										<i class="material-icons" aria-hidden="true">accessibility_new</i>
+										<span>Accesibilidad e Inclusión</span>
+									</a>
+								</li>
+							</ul>
 						</li>
+						<li><a href="Contacto.html">Contacto</a></li>
 					</ul>
 					<button aria-label="Cambiar tema" class="boton-tema" id="boton-tema" title="Cambiar tema" type="button">
 						<i class="material-icons" id="icono-tema">light_mode</i>
@@ -35,138 +73,439 @@
 		</header>
 
 		<main class="contenido-principal">
-			<section class="seccion-nosotros">
+			<section class="seccion-identidad">
 				<div class="contenedor-pagina">
+
+					<!-- Subbarra de navegación informativa -->
+					<div class="subbarra-informativa animar-entrada">
+						<span class="ruta-informativa">
+							<i class="material-icons" aria-hidden="true">info</i>
+							<span>Información del Proyecto / <strong>Identidad de Marca</strong></span>
+						</span>
+						<div class="enlaces-subbarra">
+							<a class="pill-subbarra" href="Nosotros.html">Nosotros</a>
+							<a class="pill-subbarra" href="Objetivos.html">Objetivos</a>
+							<a class="pill-subbarra" href="Avances.html">Avances</a>
+							<a class="pill-subbarra activa" href="Identidad-de-Marca.html">Identidad de Marca</a>
+							<a class="pill-subbarra" href="Accesibilidad.html">Accesibilidad</a>
+						</div>
+					</div>
+
 					<!-- 1. Encabezado principal -->
-					<div class="tarjeta-inicio tarjeta-presentacion">
+					<div class="tarjeta-inicio tarjeta-presentacion animar-entrada retraso-1">
 						<div class="contenido-inicio contenido-identidad-encabezado">
 							<span class="etiqueta-inicio">IDENTIDAD VISUAL Y DISEÑO</span>
-							<h1 class="titulo-inicio">Guía de Estilo ElPuntoTech</h1>
+							<h1 class="titulo-inicio">Identidad de Marca</h1>
+							<p class="resumen-inicio">
+								Guía visual, tipográfica y cromática de ElPuntoTech
+							</p>
 							<p class="descripcion-inicio">
 								Nuestro sistema visual sigue una estética limpia y estructurada tipo
 								<em>Blueprint Modern</em>, diseñada para ofrecer claridad operativa,
-								legibilidad en puntos de venta y confianza tecnológica.
+								lectura ágil en puntos de venta y confianza tecnológica en toda la plataforma.
 							</p>
 						</div>
 					</div>
 
-					<div class="tarjetas-identidad">
-						<article class="tarjeta-inicio tarjeta-identidad">
+					<!-- 2. Marca, Isotipo y Slogan -->
+					<div class="tarjetas-identidad animar-entrada retraso-2">
+						<article class="tarjeta-inicio tarjeta-identidad tarjeta-interactiva">
 							<div class="contenido-identidad">
-								<span class="icono-identidad material-icons" aria-hidden="true">text_fields</span>
-								<span class="etiqueta-inicio">TIPOGRAFÍA PRINCIPAL</span>
-								<h2 class="titulo-identidad">Familia Tipográfica: Inter</h2>
-								<div class="muestra-fuente">Aa Bb Cc 123</div>
-								<p class="descripcion-inicio">
-									<strong>¿Por qué usamos Inter?</strong> Se uso Inter como familia tipografica principal ya que su altura X (x height)
-									y sus formas abiertas maximizan la legibilidad en tamaños pequeños y permiten una lectura rapida de cifras y datos en puntos de venta,
-									evitando la fatiga visual Además, su amplia variedad de pesos tipográficos permite construir una jerarquía visual clara
-									y accesible entre encabezados, cuerpo de texto y etiquetas de interfaz sin comprometer el rendimiento de carga. 
+								<span class="icono-identidad material-icons" aria-hidden="true">verified</span>
+								<span class="etiqueta-inicio">SIGNO VISUAL</span>
+								<h2 class="titulo-identidad">Isotipo y Logotipo</h2>
+								<div class="contenedor-logo-identidad">
+									<img src="img/logo-elpuntotech.svg" alt="Isotipo oficial de ElPuntoTech">
+									<div>
+										<strong class="nombre-bloque-marca">ElPuntoTech</strong>
+										<span class="subtitulo-bloque-marca">Versión principal en formato vectorial escalable</span>
+									</div>
+								</div>
+								<p class="descripcion-inicio texto-identidad-espaciado">
+									Isotipo geométrico minimalista cuyo trazo limpio y simétrico garantiza
+									nitidez e identificación inmediata desde iconos pequeños hasta pantallas
+									principales, proyectando orden, innovación y solidez operativa.
 								</p>
 							</div>
 						</article>
 
-						<article class="tarjeta-inicio tarjeta-identidad">
+						<article class="tarjeta-inicio tarjeta-identidad tarjeta-interactiva">
 							<div class="contenido-identidad">
-								<span class="icono-identidad material-icons" aria-hidden="true">verified</span>
-								<span class="etiqueta-inicio">MARCA Y LEMA</span>
-								<h2 class="titulo-identidad">Logo y Slogan</h2>
-								<div class="contenedor-logo-identidad">
-									<img src="img/logo-elpuntotech.svg" alt="Isotipo oficial de ElPuntoTech">
-									<div>
-										<strong>ElPuntoTech</strong>
-										<p class="descripcion-inicio" style="margin: 0.25rem 0 0;">
-											Isotipo geométrico minimalista lo decidimos asi ya que,
-											su trazo limpio y simetrico garantiza escalabilidad y reconocimiento inmediato tanto en favicons pequeños como en pantallas principales,
-											proyectando orden, innovacion y solidez operativa.
-
-											
-											
-										</p>
-									</div>
-								</div>
-								<p class="texto-slogan">
+								<span class="icono-identidad material-icons" aria-hidden="true">format_quote</span>
+								<span class="etiqueta-inicio">LEMA DE MARCA</span>
+								<h2 class="titulo-identidad">Slogan Oficial</h2>
+								<blockquote class="caja-slogan-identidad">
 									"Control preciso y tecnología inteligente para tu punto de venta."
-								<p class="descripcion-inicio" style="margin: 0.25rem 0 0;">
-									En cuanto al slogan comunica directamente la propuesta de valor del sistema: control preciso (gestion exacta de inventario y caja)
-									y tecnologia inteligente (automatizacion y modernizacion), generando confianza en el usuario comercial.
-								</p>
+								</blockquote>
+								<p class="descripcion-inicio texto-identidad-espaciado">
+									Comunica directamente la propuesta de valor del sistema: control preciso
+									(gestión exacta de inventario y caja) y tecnología inteligente (automatización
+									y modernización), generando confianza en el usuario comercial.
 								</p>
 							</div>
 						</article>
 					</div>
 
-					<div class="tarjeta-inicio tarjeta-presentacion" style="margin-top: 1.5rem;">
-						<div class="contenido-inicio">
+					<!-- 3. Sistema Tipográfico -->
+					<div class="tarjeta-inicio tarjeta-bloque-identidad revelar-scroll">
+						<div class="contenido-bloque-identidad">
+							<span class="icono-identidad material-icons" aria-hidden="true">text_fields</span>
+							<span class="etiqueta-inicio">SISTEMA TIPOGRÁFICO</span>
+							<h2 class="titulo-identidad">Familias y Fuentes Tipográficas</h2>
+							<p class="descripcion-inicio">
+								Diferenciamos entre <strong>familia tipográfica</strong> (conjunto de diseños que comparten
+								una misma estructura base) y <strong>fuente tipográfica</strong> (cada variante específica
+								de grosor y estilo utilizada para construir jerarquía visual y facilitar la lectura).
+							</p>
+
+							<div class="cuadricula-familias">
+								<article class="ficha-familia">
+									<span class="etiqueta-familia etiqueta-familia-principal">Familia Tipográfica Principal</span>
+									<h3 class="titulo-avance">Inter — Clasificación: Sans serif</h3>
+									<div class="muestra-fuente">Aa Bb Cc 123</div>
+									<p class="descripcion-inicio texto-compacto">
+										<strong>Uso en la página:</strong> Títulos, encabezados, menú de navegación,
+										párrafos informativos y etiquetas generales.
+									</p>
+									<p class="descripcion-inicio texto-compacto">
+										<strong>Justificación:</strong> Se seleccionó esta familia <em>Sans serif</em> (sin remates)
+										por su alta legibilidad en pantalla. Su proporción amplia y trazos abiertos
+										facilitan la lectura rápida de precios y datos en puntos de venta sin fatiga visual.
+									</p>
+									<p class="descripcion-inicio texto-compacto">
+										<strong>Respaldo visual:</strong> Utiliza automáticamente las tipografías nativas
+										del dispositivo (como <em>Segoe UI</em> o <em>Roboto</em>) para garantizar lectura
+										inmediata en cualquier equipo.
+									</p>
+								</article>
+
+								<article class="ficha-familia">
+									<span class="etiqueta-familia etiqueta-familia-secundaria">Familia Tipográfica Secundaria</span>
+									<h3 class="titulo-avance">JetBrains Mono — Clasificación: Monoespaciada</h3>
+									<div class="muestra-fuente muestra-mono">01 #1769AA</div>
+									<p class="descripcion-inicio texto-compacto">
+										<strong>Uso en la página:</strong> Códigos de color, referencias de productos (SKU),
+										numeración de facturas y datos técnicos.
+									</p>
+									<p class="descripcion-inicio texto-compacto">
+										<strong>Justificación:</strong> Complementa a <em>Inter</em> aportando precisión visual.
+										Cada carácter ocupa exactamente el mismo ancho horizontal, evitando confusiones entre
+										signos similares (como el cero y la letra O, o el uno y la L minúscula) y manteniendo
+										alineadas las columnas numéricas.
+									</p>
+									<p class="descripcion-inicio texto-compacto">
+										<strong>Respaldo visual:</strong> Se apoya en las fuentes monoespaciadas estándar
+										del sistema operativo para conservar la alineación de cifras en cualquier entorno.
+									</p>
+								</article>
+							</div>
+
+							<div class="cabecera-paleta-tema">
+								<h3 class="subtitulo-identidad">Comparativa de Fuentes Tipográficas Usadas en la Página</h3>
+								<span class="etiqueta-familia etiqueta-familia-secundaria">Ejemplo Aplicado: ElPuntoTech</span>
+							</div>
+							<p class="descripcion-inicio texto-compacto">
+								Comparación de cada variante tipográfica empleada en el sitio, mostrando cómo se visualiza
+								el nombre <strong>ElPuntoTech</strong> y el momento o función visual que cumple dentro de la lectura:
+							</p>
+
+							<div class="contenedor-tabla-fuentes">
+								<table class="tabla-comparativa-fuentes" aria-label="Tabla comparativa de fuentes tipográficas usadas en ElPuntoTech">
+									<thead>
+										<tr>
+											<th>Fuente Tipográfica</th>
+											<th>Familia / Clasificación</th>
+											<th>Grosor y Estilo</th>
+											<th>Ejemplo Aplicado</th>
+											<th>Función Visual y Momento de Uso</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">Inter Bold</strong></td>
+											<td>Inter · <em>Sans serif</em></td>
+											<td>700 (Negrita) · Normal</td>
+											<td><span class="ejemplo-fuente fuente-inter-700">ElPuntoTech</span></td>
+											<td>Se utiliza para <strong>resaltar y jerarquizar</strong> la identidad principal, los títulos de cada sección y las cifras clave que deben captar la atención al instante.</td>
+										</tr>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">Inter SemiBold</strong></td>
+											<td>Inter · <em>Sans serif</em></td>
+											<td>600 (Seminegrita) · Normal</td>
+											<td><span class="ejemplo-fuente fuente-inter-600">ElPuntoTech</span></td>
+											<td>Se emplea para <strong>destacar subtítulos y controles interactivos</strong> (como botones y etiquetas de formularios), guiando el recorrido visual del usuario.</td>
+										</tr>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">Inter SemiBold Italic</strong></td>
+											<td>Inter · <em>Sans serif</em></td>
+											<td>600 (Seminegrita) · Itálica</td>
+											<td><span class="ejemplo-fuente fuente-inter-600-italic">ElPuntoTech</span></td>
+											<td>Se reserva para <strong>enfatizar frases clave y mensajes de valor</strong>, como el slogan oficial o citas destacadas, aportando expresividad sin perder claridad.</td>
+										</tr>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">Inter Medium</strong></td>
+											<td>Inter · <em>Sans serif</em></td>
+											<td>500 (Media) · Normal</td>
+											<td><span class="ejemplo-fuente fuente-inter-500">ElPuntoTech</span></td>
+											<td>Se aplica en <strong>elementos de navegación y clasificación</strong> (menú superior, categorías y estados) para facilitar la orientación y el escaneo rápido.</td>
+										</tr>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">Inter Regular</strong></td>
+											<td>Inter · <em>Sans serif</em></td>
+											<td>400 (Regular) · Normal</td>
+											<td><span class="ejemplo-fuente fuente-inter-400">ElPuntoTech</span></td>
+											<td>Se usa en párrafos descriptivos y bloques informativos extensos para <strong>garantizar una lectura cómoda, fluida y sin fatiga visual</strong>.</td>
+										</tr>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">JetBrains Mono Bold</strong></td>
+											<td>JetBrains Mono · <em>Monoespaciada</em></td>
+											<td>700 (Negrita) · Normal</td>
+											<td><span class="ejemplo-fuente fuente-mono-700">ElPuntoTech</span></td>
+											<td>Se utiliza para <strong>resaltar códigos críticos y valores numéricos</strong> donde cada carácter debe distinguirse con exactitud visual (como códigos de color o totales).</td>
+										</tr>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">JetBrains Mono Medium</strong></td>
+											<td>JetBrains Mono · <em>Monoespaciada</em></td>
+											<td>500 (Media) · Normal</td>
+											<td><span class="ejemplo-fuente fuente-mono-500">ElPuntoTech</span></td>
+											<td>Se emplea en <strong>identificadores técnicos y referencias de producto (SKU)</strong> para mantener el orden visual y evitar confusiones entre letras y números similares.</td>
+										</tr>
+										<tr>
+											<td><strong class="nombre-fuente-tabla">Fuentes de Respaldo</strong></td>
+											<td>Sistema · <em>Sans serif nativa</em></td>
+											<td>700 (Negrita) · Normal</td>
+											<td><span class="ejemplo-fuente fuente-sistema-700">ElPuntoTech</span></td>
+											<td>Funciona como <strong>garantía de legibilidad inmediata</strong> en cualquier dispositivo o navegador, asegurando que el contenido se lea correctamente incluso sin conexión.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<!-- 4. Sistema Cromático de la Marca -->
+					<div class="tarjeta-inicio tarjeta-bloque-identidad revelar-scroll">
+						<div class="contenido-bloque-identidad">
 							<span class="icono-identidad material-icons" aria-hidden="true">palette</span>
 							<span class="etiqueta-inicio">SISTEMA CROMÁTICO</span>
-							<h2 class="titulo-identidad">Paleta de Colores</h2>
+							<h2 class="titulo-identidad">Paleta de Colores de la Marca</h2>
 							<p class="descripcion-inicio">
-								La paleta se fundamenta en una armonia de tonos azules frios combinados con neutros de alto contraste, 
-								alineada con una estetica Blueprint Modern. Desde la psicologia del color, el azul transmite confianza, 
-								estabilidad y precision tecnologica, mientras que la dualidad entre modo claro y modo oscuro optimiza la ergonomía visual
-								y reduce la fatiga ocular según las condiciones de iluminacion del punto de venta.
+								Combinación cromática diseñada para jerarquizar cada superficie, texto y elemento
+								interactivo de la interfaz, adaptándose tanto a entornos de poca luz como a espacios
+								muy iluminados.
+							</p>
+
+							<!-- 4A. Paleta Versión Oscura -->
+							<div class="cabecera-paleta-tema">
+								<h3 class="subtitulo-identidad">Versión Modo Oscuro (Tema Predeterminado)</h3>
+								<span class="etiqueta-familia etiqueta-familia-secundaria">7 Colores Principales</span>
+							</div>
+							<p class="descripcion-inicio texto-compacto">
+								Tonos azul pizarra que diferencian cada nivel visual de la interfaz —desde el fondo general
+								(<code class="codigo-inline">#0B1120</code>) hasta las tarjetas de contenido (<code class="codigo-inline">#1E293B</code>)—
+								acompañados de un acento cian (<code class="codigo-inline">#38BDF8</code>) que guía la atención sin cansar la vista.
 							</p>
 
 							<div class="cuadricula-colores">
 								<div class="ficha-color">
-									<div class="muestra-hex" style="background-color: #1769aa;"></div>
-									<div class="info-color">
-										<span class="codigo-hex">#1769AA</span>
-										<p class="descripcion-inicio" style="margin: 0; font-size: 0.875rem;">
-											<strong>Azul Primario (Claro):</strong> Se uso este color como marca e identidad principal ya que deicidimos que su uso sea a botones de acción primaria, 
-											enlaces y estados activos en el tema claro logrando un contraste superior a 5:1 con texto blanco para cumplir con los estándares de accesibilidad WCAG AA.
-										</p>
+									<div class="muestra-hex oscuro-fondo-general">
+										<span class="preview-chip preview-oscuro-card">Fondo General</span>
 									</div>
-								</div>
-
-								<div class="ficha-color">
-									<div class="muestra-hex" style="background-color: #38bdf8;"></div>
-									<div class="info-color">
-										<span class="codigo-hex">#38BDF8</span>
-										<p class="descripcion-inicio" style="margin: 0; font-size: 0.875rem;">
-											<strong>Azul Acento (Oscuro):</strong> Esta es una variante luminosa del color de marca que se escogio específicamente para el modo oscuro. 
-											Garantiza que los elementos interactivos, iconos y focos de atencion resalten con nitidez sobre fondos oscuros sin generar deslumbramiento.
-										</p>
-									</div>
-								</div>
-
-								<div class="ficha-color">
-									<div class="muestra-hex" style="background-color: #1f2933;"></div>
-									<div class="info-color">
-										<span class="codigo-hex">#1F2933</span>
-										<p class="descripcion-inicio" style="margin: 0; font-size: 0.875rem;">
-											<strong>Texto Principal:</strong> Se escogio este color para utilizarlo en encabezados y cuerpo de texto sobre fondos claros. 
-											ofreciendo una lectura más suave y cómoda que el negro puro al evitar el efecto halo.
-										</p>
-									</div>
-								</div>
-
-								<div class="ficha-color">
-									<div class="muestra-hex" style="background-color: #0b1120;"></div>
 									<div class="info-color">
 										<span class="codigo-hex">#0B1120</span>
-										<p class="descripcion-inicio" style="margin: 0; font-size: 0.875rem;">
-											<strong>Fondo Oscuro:</strong> Se eleigio el Azul medianoche profundo para ser empleado como superficie base en el tema oscuro. 
-											Reduce significativamente la emision de luz azul y el cansancio visual en jornadas laborales prolongadas o entornos con baja iluminacion.
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Fondo Base de Página:</strong> Superficie profunda sobre la que
+											descansan todos los bloques y tarjetas de información.
 										</p>
 									</div>
 								</div>
 
 								<div class="ficha-color">
-									<div class="muestra-hex" style="background-color: #eef0f2;"></div>
+									<div class="muestra-hex oscuro-fondo-nav">
+										<span class="preview-nav-oscuro">ElPuntoTech</span>
+									</div>
 									<div class="info-color">
-										<span class="codigo-hex">#EEF0F2</span>
-										<p class="descripcion-inicio" style="margin: 0; font-size: 0.875rem;">
-											<strong>Fondo Claro:</strong> El Gris neutro muy tenue es utilizado como lienzo general en el tema claro. 
-											Suaviza el brillo de la pantalla frente al blanco puro y permite diferenciar visualmente las tarjetas 
-											mediante jerarquía de elevación y contraste sutil.
+										<span class="codigo-hex">#182234</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Barra Superior de Navegación:</strong> Delimita el menú principal
+											y mantiene siempre visible el logotipo y las secciones del sitio.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex oscuro-fondo-footer">
+										<span class="preview-footer-oscuro">Pie de Página · Campos</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#0F172A</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Pie de Página y Bloques Internos:</strong> Diferencia las áreas de cierre,
+											los campos para escribir datos y las fichas secundarias.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex oscuro-fondo-tarjeta">
+										<span class="preview-tarjeta-oscuro">Tarjeta Principal</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#1E293B</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Tarjetas de Contenido:</strong> Agrupa y eleva visualmente la información
+											clave para facilitar su lectura por secciones.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex oscuro-azul-acento">
+										<span class="preview-acento-oscuro">Acento · Botón</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#38BDF8</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Cian de Acento Visual:</strong> Destaca los botones de acción, la sección
+											activa en el menú, los iconos y los subtítulos.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex oscuro-texto-principal">
+										<span class="preview-texto-oscuro-1">Aa Título</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#F1F5F9</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Texto de Alta Jerarquía:</strong> Garantiza máximo contraste y nitidez
+											en títulos, encabezados y datos ingresados por el usuario.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex oscuro-texto-secundario">
+										<span class="preview-texto-oscuro-2">Aa Párrafo</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#94A3B8</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Texto de Lectura General:</strong> Suaviza el contraste en párrafos
+											descriptivos y listados para evitar fatiga visual en jornadas largas.
 										</p>
 									</div>
 								</div>
 							</div>
+
+							<!-- 4B. Paleta Versión Clara -->
+							<div class="cabecera-paleta-tema">
+								<h3 class="subtitulo-identidad">Versión Modo Claro (Tema Día)</h3>
+								<span class="etiqueta-familia etiqueta-familia-principal">7 Colores Principales</span>
+							</div>
+							<p class="descripcion-inicio texto-compacto">
+								Escala de tonos neutros y luminosos que separa el fondo general (<code class="codigo-inline">#EEF0F2</code>),
+								la barra de navegación (<code class="codigo-inline">#F5F6F7</code>) y las tarjetas (<code class="codigo-inline">#F8F9FA</code>),
+								jerarquizados con un azul institucional (<code class="codigo-inline">#1769AA</code>) que aporta claridad en ambientes muy iluminados.
+							</p>
+
+							<div class="cuadricula-colores">
+								<div class="ficha-color">
+									<div class="muestra-hex claro-fondo-general">
+										<span class="preview-chip preview-claro-card">Fondo General</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#EEF0F2</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Fondo Base de Página:</strong> Lienzo neutro que separa visualmente
+											las tarjetas de contenido sin generar reflejos molestos.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex claro-fondo-nav">
+										<span class="preview-nav-claro">ElPuntoTech</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#F5F6F7</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Barra Superior y Pie de Página:</strong> Delimita con suavidad las zonas
+											de navegación principal y los datos institucionales.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex claro-superficie-blanca">
+										<span class="preview-input-claro">Campos · Documentos</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#FFFFFF</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Campos de Escritura y Lectura:</strong> Destaca los espacios interactivos
+											donde el usuario ingresa información o consulta documentos.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex claro-fondo-tarjeta">
+										<span class="preview-tarjeta-claro">Tarjeta Principal</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#F8F9FA</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Tarjetas de Contenido:</strong> Superficie limpia que organiza la
+											información principal y enmarca el isotipo de la empresa.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex claro-azul-primario">
+										<span class="preview-acento-claro">Azul Institucional</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#1769AA</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Azul Institucional:</strong> Transmite confianza y profesionalismo en
+											botones principales, enlaces activos, iconos y subtítulos.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex claro-texto-principal">
+										<span class="preview-texto-claro-1">Aa Título</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#1F2933</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Texto de Alta Jerarquía:</strong> Ofrece una lectura firme y nítida
+											en títulos, encabezados y el nombre de la marca.
+										</p>
+									</div>
+								</div>
+
+								<div class="ficha-color">
+									<div class="muestra-hex claro-texto-secundario">
+										<span class="preview-texto-claro-2">Aa Párrafo</span>
+									</div>
+									<div class="info-color">
+										<span class="codigo-hex">#59636E</span>
+										<p class="descripcion-inicio texto-ficha-color">
+											<strong>Texto de Lectura General:</strong> Mantiene una jerarquía visual equilibrada
+											en párrafos informativos, descripciones y detalles secundarios.
+										</p>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
+
 				</div>
 			</section>
 		</main>
@@ -194,5 +533,6 @@
 		</footer>
 
 		<script src="js/app.js"></script>
+		<script src="js/ui-enhancements.js"></script>
 	</body>
 </html>

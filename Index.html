@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<title>
-			ElPuntoTech
-		</title>
+		<title>ElPuntoTech | Plataforma POS y Gestión de Electrónica</title>
 		<link rel="icon" type="image/svg+xml" href="img/logo-elpuntotech.svg">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<script src="js/theme.js"></script>
@@ -18,25 +19,58 @@
 					<a class="marca-navegacion" href="Index.html">
 						<img class="logo-marca" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
 						<span class="nombre-marca">ElPuntoTech</span>
+						<span class="etiqueta-version-nav">CONCEPTO POS</span>
 					</a>
 					<ul class="enlaces-navegacion">
 						<li class="active">
 							<a aria-current="page" href="Index.html">Inicio</a>
 						</li>
 						<li>
-							<a href="Nosotros.html">Nosotros</a>
+							<a href="#catalogo-preview">Catálogo</a>
 						</li>
 						<li>
-							<a href="Objetivos.html">Objetivos</a>
+							<a href="#sistema-pos">Sistema POS</a>
 						</li>
-						<li>
-							<a href="Avances.html">Avances</a>
+						<li class="item-desplegable">
+							<button class="boton-desplegable-nav" type="button" aria-expanded="false" aria-haspopup="true">
+								<span>Información</span>
+								<i class="material-icons icono-flecha-nav" aria-hidden="true">expand_more</i>
+							</button>
+							<ul class="menu-desplegable-nav" role="menu">
+								<li>
+									<a href="Nosotros.html">
+										<i class="material-icons" aria-hidden="true">groups</i>
+										<span>Nosotros (Misión y Visión)</span>
+									</a>
+								</li>
+								<li>
+									<a href="Objetivos.html">
+										<i class="material-icons" aria-hidden="true">track_changes</i>
+										<span>Objetivos del Proyecto</span>
+									</a>
+								</li>
+								<li>
+									<a href="Avances.html">
+										<i class="material-icons" aria-hidden="true">folder_open</i>
+										<span>Avances y Documentación</span>
+									</a>
+								</li>
+								<li>
+									<a href="Identidad-de-Marca.html">
+										<i class="material-icons" aria-hidden="true">palette</i>
+										<span>Identidad de Marca</span>
+									</a>
+								</li>
+								<li>
+									<a href="Accesibilidad.html">
+										<i class="material-icons" aria-hidden="true">accessibility_new</i>
+										<span>Accesibilidad e Inclusión</span>
+									</a>
+								</li>
+							</ul>
 						</li>
 						<li>
 							<a href="Contacto.html">Contacto</a>
-						</li>
-						<li>
-							<a href="Identidad-de-Marca.html">Identidad de Marca</a>
 						</li>
 					</ul>
 					<button aria-label="Cambiar tema" class="boton-tema" id="boton-tema" title="Cambiar tema" type="button">
@@ -49,31 +83,331 @@
 		<main class="contenido-principal">
 			<section class="seccion-inicio">
 				<div class="contenedor-pagina">
-					<div class="tarjeta-inicio">
+
+					<!-- Banner contextual de la propuesta de software -->
+					<div class="aviso-concepto-software animar-entrada">
+						<div class="texto-aviso-software">
+							<i class="material-icons" aria-hidden="true">developer_board</i>
+							<span>
+								<strong>Propuesta conceptual del software:</strong> Esta vista sienta las bases visuales y funcionales de la futura plataforma POS y catálogo web <strong>ElPuntoTech</strong>.
+							</span>
+						</div>
+						<a class="enlace-documentacion-rapida" href="Avances.html">
+							<span>Ver documentación del proyecto</span>
+							<i class="material-icons" style="font-size:1rem;" aria-hidden="true">arrow_forward</i>
+						</a>
+					</div>
+
+					<!-- Hero principal del software -->
+					<div class="tarjeta-inicio animar-entrada retraso-1">
 						<div class="contenido-tarjeta">
 							<div class="distribucion-inicio">
 								<div class="contenido-inicio">
-									<span class="etiqueta-inicio">INICIO</span>
+									<span class="etiqueta-inicio">PLATAFORMA POS PARA ELECTRÓNICA</span>
 									<h1 class="titulo-inicio">ElPuntoTech</h1>
 									<p class="resumen-inicio">
-										Sistema Pos Para Gestionar Una Empresa De Productos De Electronica.
+										Control preciso y tecnología inteligente para tu punto de venta.
 									</p>
 									<p class="descripcion-inicio">
-										Este sistema esta diseñado para ayudar a las empresas de productos de electronica a gestionar sus operaciones de manera eficiente y efectiva. Con ElPuntoTech, los usuarios pueden realizar un seguimiento de sus ventas, inventario y clientes, lo que les permite tomar decisiones informadas y mejorar su rentabilidad.
+										Sistema integral pensado para comercios y distribuidoras de productos electrónicos: centraliza el inventario en tiempo real, agiliza la facturación al detal y al por mayor, y organiza los permisos por perfil de usuario (Administrador, Gerente y Cajero).
 									</p>
+									<div class="acciones-hero">
+										<a class="boton-avance" href="#catalogo-preview">
+											<i class="material-icons" aria-hidden="true">storefront</i>
+											<span>Vista previa de productos</span>
+										</a>
+										<a class="boton-avance boton-avance-secundario" href="#sistema-pos">
+											<i class="material-icons" aria-hidden="true">admin_panel_settings</i>
+											<span>Explorar roles y módulos</span>
+										</a>
+									</div>
 								</div>
 								<div class="imagen-inicio">
 									<div class="marco-logo">
 										<img class="logo-principal" src="img/logo-elpuntotech.svg" alt="Logo de ElPuntoTech">
+										<div class="estado-prototipo-hero">
+											<span class="indicador-pulso" aria-hidden="true"></span>
+											<span>Inventario · Facturación · Roles</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<!-- Sección 1: Vista previa de productos destacados (Wireframe Web/Móvil) -->
+					<div class="bloque-seccion-inicio revelar-scroll" id="catalogo-preview">
+						<div class="cabecera-seccion-inicio">
+							<div>
+								<span class="etiqueta-inicio">VISTA PREVIA DEL CATÁLOGO</span>
+								<h2 class="titulo-inicio titulo-objetivos">Productos Destacados de Electrónica</h2>
+							</div>
+							<div class="barra-carrito-simulado" aria-live="polite">
+								<i class="material-icons" aria-hidden="true">shopping_cart</i>
+								<span>Pedido de prueba:</span>
+								<span class="contador-carrito" id="contador-items-sim">0 ítems</span>
+								<span>·</span>
+								<span class="contador-carrito" id="total-simulado">$ 0</span>
+								<button class="boton-reiniciar-sim" id="boton-reiniciar-sim" type="button" title="Limpiar pedido de prueba">Limpiar</button>
+							</div>
+						</div>
+
+						<div class="cuadricula-productos-preview">
+							<!-- Producto 1 -->
+							<article class="tarjeta-producto-preview">
+								<div class="visual-producto-preview">
+									<span class="badge-oferta-producto">Destacado</span>
+									<i class="material-icons" aria-hidden="true">memory</i>
+								</div>
+								<div class="cuerpo-producto-preview">
+									<span class="sku-producto">SKU-EL-101</span>
+									<h3 class="nombre-producto-preview">Kit Desarrollo ESP32 Wi-Fi + BT</h3>
+									<p class="desc-producto-preview">
+										Placa de desarrollo dual-core con módulo inalámbrico integrado y cable USB de programación.
+									</p>
+									<div class="pie-producto-preview">
+										<span class="precio-producto-preview">$ 42.000</span>
+										<button class="boton-simular-producto" type="button" data-nombre="Kit Desarrollo ESP32" data-precio="42000">
+											<i class="material-icons" style="font-size:1rem;" aria-hidden="true">add_shopping_cart</i>
+											<span>Simular</span>
+										</button>
+									</div>
+								</div>
+							</article>
+
+							<!-- Producto 2 -->
+							<article class="tarjeta-producto-preview">
+								<div class="visual-producto-preview">
+									<span class="badge-oferta-producto">Oferta</span>
+									<i class="material-icons" aria-hidden="true">speed</i>
+								</div>
+								<div class="cuerpo-producto-preview">
+									<span class="sku-producto">SKU-EL-204</span>
+									<h3 class="nombre-producto-preview">Multímetro Digital True-RMS</h3>
+									<p class="desc-producto-preview">
+										Medición precisa de voltaje AC/DC, corriente, resistencia, continuidad y capacitancia.
+									</p>
+									<div class="pie-producto-preview">
+										<span class="precio-producto-preview">$ 135.000</span>
+										<button class="boton-simular-producto" type="button" data-nombre="Multímetro Digital True-RMS" data-precio="135000">
+											<i class="material-icons" style="font-size:1rem;" aria-hidden="true">add_shopping_cart</i>
+											<span>Simular</span>
+										</button>
+									</div>
+								</div>
+							</article>
+
+							<!-- Producto 3 -->
+							<article class="tarjeta-producto-preview">
+								<div class="visual-producto-preview">
+									<span class="badge-oferta-producto">Disponible</span>
+									<i class="material-icons" aria-hidden="true">precision_manufacturing</i>
+								</div>
+								<div class="cuerpo-producto-preview">
+									<span class="sku-producto">SKU-EL-309</span>
+									<h3 class="nombre-producto-preview">Estación de Soldadura 60W</h3>
+									<p class="desc-producto-preview">
+										Control regulable de temperatura, soporte metálico de seguridad y puntas intercambiables.
+									</p>
+									<div class="pie-producto-preview">
+										<span class="precio-producto-preview">$ 189.000</span>
+										<button class="boton-simular-producto" type="button" data-nombre="Estación de Soldadura 60W" data-precio="189000">
+											<i class="material-icons" style="font-size:1rem;" aria-hidden="true">add_shopping_cart</i>
+											<span>Simular</span>
+										</button>
+									</div>
+								</div>
+							</article>
+
+							<!-- Producto 4 -->
+							<article class="tarjeta-producto-preview">
+								<div class="visual-producto-preview">
+									<span class="badge-oferta-producto">Mayorista</span>
+									<i class="material-icons" aria-hidden="true">electrical_services</i>
+								</div>
+								<div class="cuerpo-producto-preview">
+									<span class="sku-producto">SKU-EL-412</span>
+									<h3 class="nombre-producto-preview">Fuente DC Regulable 30V 5A</h3>
+									<p class="desc-producto-preview">
+										Fuente de laboratorio de alta estabilidad con pantalla digital y protección contra cortocircuito.
+									</p>
+									<div class="pie-producto-preview">
+										<span class="precio-producto-preview">$ 320.000</span>
+										<button class="boton-simular-producto" type="button" data-nombre="Fuente DC Regulable 30V 5A" data-precio="320000">
+											<i class="material-icons" style="font-size:1rem;" aria-hidden="true">add_shopping_cart</i>
+											<span>Simular</span>
+										</button>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+
+					<!-- Sección 2: Arquitectura del Sistema POS y Roles de Acceso -->
+					<div class="bloque-seccion-inicio revelar-scroll" id="sistema-pos">
+						<div class="tarjeta-inicio">
+							<div class="panel-roles-pos">
+								<span class="icono-identidad material-icons" aria-hidden="true">hub</span>
+								<span class="etiqueta-inicio">ARQUITECTURA DEL SOFTWARE</span>
+								<h2 class="titulo-inicio titulo-objetivos">Control de Acceso y Roles del Sistema POS</h2>
+								<p class="descripcion-inicio">
+									De acuerdo con el diseño conceptual de <strong>ElPuntoTech</strong>, el acceso al sistema parte de una pantalla de autenticación que habilita vistas y permisos específicos según el perfil del colaborador:
+								</p>
+
+								<div class="selector-roles-tabs" role="tablist" aria-label="Perfiles de usuario del sistema POS">
+									<button class="tab-rol-pos activo" type="button" role="tab" aria-selected="true" data-rol="cajero">
+										<i class="material-icons" style="font-size:1.1rem;" aria-hidden="true">point_of_sale</i>
+										<span>Empleado de Caja</span>
+									</button>
+									<button class="tab-rol-pos" type="button" role="tab" aria-selected="false" data-rol="admin">
+										<i class="material-icons" style="font-size:1.1rem;" aria-hidden="true">manage_accounts</i>
+										<span>Administrador</span>
+									</button>
+									<button class="tab-rol-pos" type="button" role="tab" aria-selected="false" data-rol="gerente">
+										<i class="material-icons" style="font-size:1.1rem;" aria-hidden="true">analytics</i>
+										<span>Gerente</span>
+									</button>
+								</div>
+
+								<!-- Detalle Rol 1: Cajero -->
+								<div class="vista-detalle-rol activa" id="panel-rol-cajero">
+									<div>
+										<h3 class="titulo-pilar">Perfil: Empleado de Caja / Vendedor</h3>
+										<p class="descripcion-inicio texto-compacto">
+											Enfocado en la atención rápida en mostrador, cálculo automático de totales y entrega de comprobantes sin descuadres.
+										</p>
+										<ul class="permisos-rol-lista">
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Facturación intuitiva para ventas al detal y al por mayor</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Consulta inmediata de precios y disponibilidad en inventario</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Selección de impresoras de mostrador/almacén y registro de clientes</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Consultor de garantías y devoluciones por número de factura</li>
+										</ul>
+									</div>
+									<div class="tarjeta-login-preview">
+										<span class="etiqueta-inicio" style="margin-bottom:0.4rem;">VISTA PREVIA DE ACCESO</span>
+										<strong class="nombre-bloque-marca">Inicio de Sesión POS</strong>
+										<div class="campo-mock-login">
+											<span>Usuario:</span>
+											<span>caja.mostrador01</span>
+										</div>
+										<div class="campo-mock-login">
+											<span>Permiso:</span>
+											<span>Ventas y Facturación</span>
+										</div>
+										<div class="campo-mock-login">
+											<span>Estado:</span>
+											<span>Listo para desarrollo</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Detalle Rol 2: Administrador -->
+								<div class="vista-detalle-rol" id="panel-rol-admin">
+									<div>
+										<h3 class="titulo-pilar">Perfil: Administrador del Sistema</h3>
+										<p class="descripcion-inicio texto-compacto">
+											Encargado de mantener actualizado el catálogo tecnológico, gestionar cuentas del personal y asegurar la integridad operativa.
+										</p>
+										<ul class="permisos-rol-lista">
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Creación, edición y actualización de precios y stock de productos</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Asignación y modificación de roles y permisos de acceso</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Registro de proveedores tecnológicos y marcas distribuidas</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Auditoría del histórico de ventas para soporte ante errores</li>
+										</ul>
+									</div>
+									<div class="tarjeta-login-preview">
+										<span class="etiqueta-inicio" style="margin-bottom:0.4rem;">VISTA PREVIA DE ACCESO</span>
+										<strong class="nombre-bloque-marca">Inicio de Sesión POS</strong>
+										<div class="campo-mock-login">
+											<span>Usuario:</span>
+											<span>admin.elpuntotech</span>
+										</div>
+										<div class="campo-mock-login">
+											<span>Permiso:</span>
+											<span>Inventario y Roles</span>
+										</div>
+										<div class="campo-mock-login">
+											<span>Estado:</span>
+											<span>Listo para desarrollo</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Detalle Rol 3: Gerente -->
+								<div class="vista-detalle-rol" id="panel-rol-gerente">
+									<div>
+										<h3 class="titulo-pilar">Perfil: Gerente General</h3>
+										<p class="descripcion-inicio texto-compacto">
+											Visión global del negocio para analizar el rendimiento comercial, configurar datos legales y tomar decisiones estratégicas.
+										</p>
+										<ul class="permisos-rol-lista">
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Reportes gráficos de ventas e ingresos diarios, mensuales y anuales</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Panel de gestión empresarial (NIT, dirección, logo y datos de factura)</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Seguimiento de pedidos pendientes y contacto directo con proveedores</li>
+											<li><i class="material-icons" aria-hidden="true">check_circle</i>Supervisión integral de inventario, histórico de ventas y personal</li>
+										</ul>
+									</div>
+									<div class="tarjeta-login-preview">
+										<span class="etiqueta-inicio" style="margin-bottom:0.4rem;">VISTA PREVIA DE ACCESO</span>
+										<strong class="nombre-bloque-marca">Inicio de Sesión POS</strong>
+										<div class="campo-mock-login">
+											<span>Usuario:</span>
+											<span>gerencia.general</span>
+										</div>
+										<div class="campo-mock-login">
+											<span>Permiso:</span>
+											<span>Reportes y Dirección</span>
+										</div>
+										<div class="campo-mock-login">
+											<span>Estado:</span>
+											<span>Listo para desarrollo</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Sección 3: Módulos del Mapa del Sitio y Camino al Desarrollo -->
+					<div class="cuadricula-pilares revelar-scroll">
+						<article class="tarjeta-inicio tarjeta-interactiva">
+							<div class="contenido-pilar">
+								<span class="icono-identidad material-icons" aria-hidden="true">inventory_2</span>
+								<span class="etiqueta-inicio">MÓDULO 01 · INVENTARIO</span>
+								<h3 class="titulo-pilar">Productos y Proveedores</h3>
+								<p class="descripcion-inicio">
+									Control centralizado de componentes y equipos electrónicos, pedidos entrantes y directorio de proveedores tecnológicos.
+								</p>
+							</div>
+						</article>
+
+						<article class="tarjeta-inicio tarjeta-interactiva">
+							<div class="contenido-pilar">
+								<span class="icono-identidad material-icons" aria-hidden="true">receipt_long</span>
+								<span class="etiqueta-inicio">MÓDULO 02 · VENTAS</span>
+								<h3 class="titulo-pilar">Facturación e Histórico</h3>
+								<p class="descripcion-inicio">
+									Emisión ágil de facturas, historial de comprobantes, gestión de clientes mayoristas y consulta de garantías.
+								</p>
+							</div>
+						</article>
+
+						<article class="tarjeta-inicio tarjeta-interactiva">
+							<div class="contenido-pilar">
+								<span class="icono-identidad material-icons" aria-hidden="true">tune</span>
+								<span class="etiqueta-inicio">MÓDULO 03 · GESTIÓN</span>
+								<h3 class="titulo-pilar">Administración y Reportes</h3>
+								<p class="descripcion-inicio">
+									Configuración de impresoras, datos legales de la empresa, roles de seguridad y consolidados financieros.
+								</p>
+							</div>
+						</article>
+					</div>
+
 				</div>
 			</section>
 		</main>
-
 
 		<footer class="pie-pagina">
 			<div class="contenedor-pagina">
@@ -101,8 +435,8 @@
 			</div>
 		</footer>
 
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script src="js/app.js"></script>
-
+		<script src="js/ui-enhancements.js"></script>
 	</body>
 </html>

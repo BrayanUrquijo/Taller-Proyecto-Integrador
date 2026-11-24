@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Accesibilidad | ElPuntoTech</title>
+		<link rel="icon" type="image/svg+xml" href="img/logo-elpuntotech.svg">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<script src="js/theme.js"></script>
+	</head>
+	<body class="cuerpo-aplicacion">
+		<header class="encabezado-principal">
+			<nav class="barra-navegacion">
+				<div class="contenedor-pagina contenedor-navegacion">
+					<a class="marca-navegacion" href="Index.html">
+						<img class="logo-marca" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
+						<span class="nombre-marca">ElPuntoTech</span>
+						<span class="etiqueta-version-nav">CONCEPTO POS</span>
+					</a>
+					<ul class="enlaces-navegacion">
+						<li><a href="Index.html">Inicio</a></li>
+						<li><a href="Index.html#catalogo-preview">Catálogo</a></li>
+						<li><a href="Index.html#sistema-pos">Sistema POS</a></li>
+						<li class="item-desplegable active">
+							<button class="boton-desplegable-nav" type="button" aria-expanded="false" aria-haspopup="true">
+								<span>Información</span>
+								<i class="material-icons icono-flecha-nav" aria-hidden="true">expand_more</i>
+							</button>
+							<ul class="menu-desplegable-nav" role="menu">
+								<li>
+									<a href="Nosotros.html">
+										<i class="material-icons" aria-hidden="true">groups</i>
+										<span>Nosotros (Misión y Visión)</span>
+									</a>
+								</li>
+								<li>
+									<a href="Objetivos.html">
+										<i class="material-icons" aria-hidden="true">track_changes</i>
+										<span>Objetivos del Proyecto</span>
+									</a>
+								</li>
+								<li>
+									<a href="Avances.html">
+										<i class="material-icons" aria-hidden="true">folder_open</i>
+										<span>Avances y Documentación</span>
+									</a>
+								</li>
+								<li>
+									<a href="Identidad-de-Marca.html">
+										<i class="material-icons" aria-hidden="true">palette</i>
+										<span>Identidad de Marca</span>
+									</a>
+								</li>
+								<li class="sub-active">
+									<a aria-current="page" href="Accesibilidad.html">
+										<i class="material-icons" aria-hidden="true">accessibility_new</i>
+										<span>Accesibilidad e Inclusión</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="Contacto.html">Contacto</a></li>
+					</ul>
+					<button aria-label="Cambiar tema" class="boton-tema" id="boton-tema" title="Cambiar tema" type="button">
+						<i class="material-icons" id="icono-tema">light_mode</i>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<main class="contenido-principal">
+			<section class="seccion-accesibilidad">
+				<div class="contenedor-pagina">
+
+					<!-- Subbarra de navegación informativa -->
+					<div class="subbarra-informativa animar-entrada">
+						<span class="ruta-informativa">
+							<i class="material-icons" aria-hidden="true">info</i>
+							<span>Información del Proyecto / <strong>Accesibilidad</strong></span>
+						</span>
+						<div class="enlaces-subbarra">
+							<a class="pill-subbarra" href="Nosotros.html">Nosotros</a>
+							<a class="pill-subbarra" href="Objetivos.html">Objetivos</a>
+							<a class="pill-subbarra" href="Avances.html">Avances</a>
+							<a class="pill-subbarra" href="Identidad-de-Marca.html">Identidad de Marca</a>
+							<a class="pill-subbarra activa" href="Accesibilidad.html">Accesibilidad</a>
+						</div>
+					</div>
+
+					<!-- 1. Encabezado y contextualización de la discapacidad auditiva -->
+					<div class="tarjeta-inicio tarjeta-presentacion animar-entrada retraso-1">
+						<div class="contenido-inicio contenido-accesibilidad-encabezado">
+							<span class="etiqueta-inicio">INCLUSIÓN Y DISEÑO ACCESIBLE</span>
+							<h1 class="titulo-inicio">Accesibilidad para Personas con Discapacidad Auditiva</h1>
+							<p class="resumen-inicio">
+								¿Qué es la discapacidad auditiva y por qué debemos diseñar interfaces inclusivas?
+							</p>
+							<p class="descripcion-inicio">
+								La <strong>discapacidad auditiva</strong> es la pérdida de la capacidad de escuchar o percibir sonidos,
+								la cual puede presentarse de forma <strong>total o gradual</strong>. Es fundamental comprender que no todas
+								las personas con discapacidad auditiva tienen las mismas condiciones ni necesidades: algunas conservan mayor
+								resto auditivo, otras no la padecen desde el nacimiento —por lo que aún pueden emitir el habla— y otras
+								desarrollan habilidades como la lectura labial. Por ello, es necesario aplicar estrategias que las integren
+								de forma activa en el uso del software.
+							</p>
+						</div>
+					</div>
+
+					<!-- 2. Estrategias en plataformas y servicios existentes -->
+					<div class="encabezado-bloque animar-entrada retraso-2">
+						<span class="etiqueta-inicio">REFERENTES ACTUALES</span>
+						<h2 class="titulo-inicio titulo-objetivos">Estrategias Implementadas en Plataformas</h2>
+					</div>
+
+					<div class="tarjetas-accesibilidad animar-entrada retraso-3">
+						<article class="tarjeta-inicio tarjeta-accesibilidad tarjeta-interactiva">
+							<div class="contenido-accesibilidad">
+								<div class="cabecera-ficha-accesibilidad">
+									<span class="icono-identidad material-icons" aria-hidden="true">record_voice_over</span>
+									<span class="etiqueta-avance">Plataforma Colaborativa</span>
+								</div>
+								<h3 class="titulo-identidad">Microsoft Teams</h3>
+								<p class="descripcion-inicio">
+									Incorpora la opción de <strong>transcribir en tiempo real</strong> las conversaciones y permite
+									notificar con anticipación a los participantes cuando asiste una persona con discapacidad auditiva,
+									facilitando la gestión y presencia de un intérprete durante la sesión.
+								</p>
+							</div>
+						</article>
+
+						<article class="tarjeta-inicio tarjeta-accesibilidad tarjeta-interactiva">
+							<div class="contenido-accesibilidad">
+								<div class="cabecera-ficha-accesibilidad">
+									<span class="icono-identidad material-icons" aria-hidden="true">video_call</span>
+									<span class="etiqueta-avance estado-completado">Colombia · MinTIC</span>
+								</div>
+								<h3 class="titulo-identidad">Signos en Red</h3>
+								<p class="descripcion-inicio">
+									Servicio habilitado en Colombia por el <strong>Ministerio TIC</strong>, mediante el cual las personas
+									con discapacidad auditiva pueden llamar a un intérprete por videollamada para que traduzca en tiempo real
+									la comunicación con sus contactos personales y trámites cotidianos.
+								</p>
+							</div>
+						</article>
+					</div>
+
+					<!-- 3. Herramientas aplicables en nuestra web -->
+					<div class="tarjeta-inicio tarjeta-bloque-accesibilidad revelar-scroll">
+						<div class="contenido-bloque-accesibilidad">
+							<span class="icono-identidad material-icons" aria-hidden="true">accessibility_new</span>
+							<span class="etiqueta-inicio">SOLUCIONES PARA ELPUNTOTECH</span>
+							<h2 class="titulo-identidad">Herramientas Aplicables en Nuestra Web</h2>
+							<p class="descripcion-inicio">
+								Con el objetivo de que los usuarios puedan interactuar y comprender la plataforma sin barreras
+								de comunicación, se contemplan las siguientes herramientas de apoyo visual y traducción:
+							</p>
+
+							<div class="cuadricula-herramientas-accesibilidad">
+								<article class="ficha-herramienta">
+									<div class="cabecera-herramienta">
+										<span class="icono-herramienta material-icons" aria-hidden="true">sign_language</span>
+										<span class="etiqueta-avance estado-completado">Lengua de Señas Colombiana</span>
+									</div>
+									<h3 class="titulo-avance">Hetah</h3>
+									<p class="descripcion-inicio texto-compacto">
+										Permite generar videos en <strong>Lengua de Señas Colombiana (LSC)</strong> usando un asistente
+										visual. Funciona redactando el texto que se desea comunicar para que un intérprete virtual lo
+										traduzca de forma clara, con buena calidad de imagen e incluso permitiendo cambiar la velocidad
+										de reproducción según se requiera.
+									</p>
+								</article>
+
+								<article class="ficha-herramienta">
+									<div class="cabecera-herramienta">
+										<span class="icono-herramienta material-icons" aria-hidden="true">interpreter_mode</span>
+										<span class="etiqueta-avance">Intérprete Animado</span>
+									</div>
+									<h3 class="titulo-avance">Vozual</h3>
+									<p class="descripcion-inicio texto-compacto">
+										Aplicación enfocada en lograr una mejor comunicación con el usuario: recibe texto escrito y,
+										mediante un <strong>intérprete animado</strong>, traduce lo dicho directamente a lenguaje de señas
+										en pantalla.
+									</p>
+								</article>
+
+								<article class="ficha-herramienta">
+									<div class="cabecera-herramienta">
+										<span class="icono-herramienta material-icons" aria-hidden="true">closed_caption</span>
+										<span class="etiqueta-avance">Contenido Audiovisual</span>
+									</div>
+									<h3 class="titulo-avance">Subtítulos</h3>
+									<p class="descripcion-inicio texto-compacto">
+										Es la herramienta más común y efectiva para todo <strong>contenido audiovisual</strong> (tutoriales,
+										videos de capacitación y demostraciones del sistema), permitiendo comprender de manera directa
+										cualquier explicación sonora.
+									</p>
+								</article>
+
+								<article class="ficha-herramienta">
+									<div class="cabecera-herramienta">
+										<span class="icono-herramienta material-icons" aria-hidden="true">videocam</span>
+										<span class="etiqueta-avance">Aprendizaje y Cámara</span>
+									</div>
+									<h3 class="titulo-avance">TraduceSeña</h3>
+									<p class="descripcion-inicio texto-compacto">
+										Herramienta que facilita el aprendizaje del lenguaje de señas: mediante la <strong>cámara</strong>
+										toma la imagen del usuario y traduce los ggitestos que realiza, fomentando el aprendizaje activo y
+										la comunicación inclusiva.
+									</p>
+								</article>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+
+		<footer class="pie-pagina">
+			<div class="contenedor-pagina">
+				<div class="distribucion-pie">
+					<div class="marca-pie">
+						<img class="logo-pie" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
+						<div><span class="titulo-pie">ElPuntoTech</span></div>
+					</div>
+					<div class="datos-grupo">
+						<span class="encabezado-pie">Datos del grupo</span>
+						<p class="texto-pie">Asignatura: Proyecto Integrador</p>
+						<span class="etiqueta-integrantes">Equipo responsable</span>
+						<ul class="lista-integrantes">
+							<li>Brayan Urquijo</li>
+							<li>Nicolle Puin</li>
+							<li>Santiago Torres</li>
+							<li>Karen Vanessa</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/app.js"></script>
+		<script src="js/ui-enhancements.js"></script>
+	</body>
+</html>
