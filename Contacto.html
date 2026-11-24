@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contacto | ElPuntoTech</title>
 		<link rel="icon" type="image/svg+xml" href="img/logo-elpuntotech.svg">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<script src="js/theme.js"></script>
@@ -16,26 +19,52 @@
 					<a class="marca-navegacion" href="Index.html">
 						<img class="logo-marca" src="img/logo-elpuntotech.svg" alt="Isotipo de ElPuntoTech">
 						<span class="nombre-marca">ElPuntoTech</span>
+						<span class="etiqueta-version-nav">CONCEPTO POS</span>
 					</a>
 					<ul class="enlaces-navegacion">
-						<li>
-							<a aria-current="page" href="Index.html">Inicio</a>
+						<li><a href="Index.html">Inicio</a></li>
+						<li><a href="Index.html#catalogo-preview">Catálogo</a></li>
+						<li><a href="Index.html#sistema-pos">Sistema POS</a></li>
+						<li class="item-desplegable">
+							<button class="boton-desplegable-nav" type="button" aria-expanded="false" aria-haspopup="true">
+								<span>Información</span>
+								<i class="material-icons icono-flecha-nav" aria-hidden="true">expand_more</i>
+							</button>
+							<ul class="menu-desplegable-nav" role="menu">
+								<li>
+									<a href="Nosotros.html">
+										<i class="material-icons" aria-hidden="true">groups</i>
+										<span>Nosotros (Misión y Visión)</span>
+									</a>
+								</li>
+								<li>
+									<a href="Objetivos.html">
+										<i class="material-icons" aria-hidden="true">track_changes</i>
+										<span>Objetivos del Proyecto</span>
+									</a>
+								</li>
+								<li>
+									<a href="Avances.html">
+										<i class="material-icons" aria-hidden="true">folder_open</i>
+										<span>Avances y Documentación</span>
+									</a>
+								</li>
+								<li>
+									<a href="Identidad-de-Marca.html">
+										<i class="material-icons" aria-hidden="true">palette</i>
+										<span>Identidad de Marca</span>
+									</a>
+								</li>
+								<li>
+									<a href="Accesibilidad.html">
+										<i class="material-icons" aria-hidden="true">accessibility_new</i>
+										<span>Accesibilidad e Inclusión</span>
+									</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<a href="Nosotros.html">Nosotros</a>
-						</li>
-						<li>
-							<a href="Objetivos.html">Objetivos</a>
-						</li>
-						<li>
-							<a href="Avances.html">Avances</a>
-						</li>
-						
 						<li class="active">
 							<a aria-current="page" href="Contacto.html">Contacto</a>
-						</li>
-						<li>
-							<a href="Identidad-de-Marca.html">Identidad de Marca</a>
 						</li>
 					</ul>
 					<button aria-label="Cambiar tema" class="boton-tema" id="boton-tema" title="Cambiar tema" type="button">
@@ -50,7 +79,7 @@
 				<div class="contenedor-pagina">
 
 					<!-- Tarjeta Encabezado / Presentación -->
-					<div class="tarjeta-inicio tarjeta-contacto-hero">
+					<div class="tarjeta-inicio tarjeta-contacto-hero animar-entrada">
 						<div class="contenido-tarjeta">
 							<div class="contenido-inicio contenido-contacto-encabezado">
 								<span class="etiqueta-inicio">CANALES DE COMUNICACIÓN</span>
@@ -59,27 +88,26 @@
 									Comunícate con el equipo de desarrollo de ElPuntoTech
 								</p>
 								<p class="descripcion-inicio">
-									¿Tienes preguntas sobre el sistema POS o deseas dejar alguna sugerencia para alguna futura version? llena el formulario y manda tu mensaje a nuestro equipo de desarrollo.
+									¿Tienes preguntas sobre el sistema POS o deseas dejar alguna sugerencia para el desarrollo de la plataforma? Llena el formulario y envía tu mensaje a nuestro equipo de desarrollo.
 								</p>
 							</div>
 						</div>
 					</div>
 
-					<!-- Formulario de Contacto -->
-					<div class="distribucion-contacto">
+					<!-- Formulario de Contacto e Información Institucional -->
+					<div class="distribucion-contacto animar-entrada retraso-1">
 						<div class="tarjeta-inicio tarjeta-formulario">
 							<div class="contenido-tarjeta-contacto">
+								<span class="icono-identidad material-icons" aria-hidden="true">mail_outline</span>
 								<span class="etiqueta-inicio">FORMULARIO DIRECTO</span>
 								<h2 class="titulo-inicio titulo-bloque-contacto">Envíanos un mensaje</h2>
 								<p class="descripcion-formulario">
 									Ingresa tus datos a continuación. Todos los campos marcados con (*) son obligatorios.
 								</p>
 
-								<!-- Mensaje de confirmación visual -->
 								<div id="mensaje-exito" class="mensaje-exito oculto" role="alert"></div>
 
 								<form id="formulario-contacto" class="formulario-contacto" novalidate>
-									<!-- Campo: Nombre -->
 									<div class="grupo-campo">
 										<label for="nombre" class="etiqueta-campo">
 											<i class="material-icons icono-campo">person</i>
@@ -89,7 +117,6 @@
 										<span class="mensaje-error" id="error-nombre"></span>
 									</div>
 
-									<!-- Campo: Correo -->
 									<div class="grupo-campo">
 										<label for="correo" class="etiqueta-campo">
 											<i class="material-icons icono-campo">email</i>
@@ -99,7 +126,6 @@
 										<span class="mensaje-error" id="error-correo"></span>
 									</div>
 
-									<!-- Campo: Mensaje -->
 									<div class="grupo-campo">
 										<label for="mensaje" class="etiqueta-campo">
 											<i class="material-icons icono-campo">chat</i>
@@ -109,7 +135,6 @@
 										<span class="mensaje-error" id="error-mensaje"></span>
 									</div>
 
-									<!-- Botones estilizados -->
 									<div class="acciones-formulario">
 										<button type="submit" class="btn waves-effect waves-light boton-enviar" id="boton-enviar">
 											<span>Enviar mensaje</span>
@@ -123,6 +148,57 @@
 								</form>
 							</div>
 						</div>
+
+						<aside class="tarjeta-inicio tarjeta-info-contacto">
+							<div class="contenido-tarjeta-contacto">
+								<span class="icono-identidad material-icons" aria-hidden="true">support_agent</span>
+								<span class="etiqueta-inicio">INFORMACIÓN GENERAL</span>
+								<h2 class="titulo-inicio titulo-bloque-contacto">Equipo y Proyecto</h2>
+								<p class="descripcion-formulario">
+									Canales de referencia académica y soporte del sistema POS ElPuntoTech.
+								</p>
+
+								<ul class="lista-canales-contacto">
+									<li class="item-canal">
+										<span class="icono-canal-marco">
+											<i class="material-icons" aria-hidden="true">school</i>
+										</span>
+										<div class="detalle-canal">
+											<strong class="titulo-canal">Contexto Académico</strong>
+											<span class="texto-canal">Asignatura: Proyecto Integrador</span>
+											<span class="subtexto-canal">Universidad del Valle · Sede Tuluá</span>
+										</div>
+									</li>
+
+									<li class="item-canal">
+										<span class="icono-canal-marco">
+											<i class="material-icons" aria-hidden="true">groups</i>
+										</span>
+										<div class="detalle-canal">
+											<strong class="titulo-canal">Integrantes del Equipo</strong>
+											<span class="texto-canal">Brayan Urquijo · Nicolle Puin</span>
+											<span class="subtexto-canal">Santiago Torres · Karen Vanessa</span>
+										</div>
+									</li>
+
+									<li class="item-canal">
+										<span class="icono-canal-marco">
+											<i class="material-icons" aria-hidden="true">schedule</i>
+										</span>
+										<div class="detalle-canal">
+											<strong class="titulo-canal">Atención de Sugerencias</strong>
+											<span class="texto-canal">Recepción continua vía formulario web</span>
+											<span class="subtexto-canal">Retroalimentación para futuras versiones</span>
+										</div>
+									</li>
+								</ul>
+
+								<div class="caja-estado-soporte">
+									<span class="indicador-pulso" aria-hidden="true"></span>
+									<span class="texto-estado">Canal de mensajes activo para comentarios y mejoras</span>
+								</div>
+							</div>
+						</aside>
 					</div>
 
 				</div>
@@ -155,9 +231,8 @@
 			</div>
 		</footer>
 
-		<!-- CDN de Materialize JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<!-- Script principal de la aplicación -->
 		<script src="js/app.js"></script>
+		<script src="js/ui-enhancements.js"></script>
 	</body>
 </html>
